@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Log Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Application Log Viewer</h1>
+
+<div class="filters">
+  <button onclick="filter('ALL')">All</button>
+  <button onclick="filter('INFO')">Info</button>
+  <button onclick="filter('ERROR')">Error</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Message</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody id="logs"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
